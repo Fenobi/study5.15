@@ -116,7 +116,7 @@ int SeqListFind(SL* ps, SLDataType x)
 void SeqListInsert(SL* ps, int pos, SLDataType x)
 {
 	/*if(pos > ps->size || pos < 0);
-	{
+{
 		printf("pos invalid\n");
 		return;
 	}*/
