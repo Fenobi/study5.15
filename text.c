@@ -7,10 +7,10 @@ void TestSeqList1()
 	SL sl;
 	SeqListPushInit(&sl);
 	SeqListPushBack(&sl, 1);
-	SeqListPushBack(&sl, 2);
-	SeqListPushBack(&sl, 3);
-	SeqListPushBack(&sl, 4);
-	SeqListPushBack(&sl, 5);
+	SeqListPushBack(&sl, "Ë³");
+	SeqListPushBack(&sl, "ÊÇ");
+	SeqListPushBack(&sl, "¸ö");
+	SeqListPushBack(&sl, "Õâ");
 	SeqListPrint(&sl);
 	
 
@@ -78,10 +78,21 @@ void TestSeqList3()
 
 }
 
+void TestSeqList4()
+{
+	SL sl;
+	SeqListPushInit(&sl);
+	SeqListPushBack(&sl, 1);
+
+	SeqListPrint(&sl);
+	SeqListDestory(&sl);
+}
+
 int main()
 {
 	//TestSeqList1();
 	//TestSeqList2();
-	TestSeqList3();
+	//TestSeqList3();
+	//TestSeqList4();
 	return 0;
 }
