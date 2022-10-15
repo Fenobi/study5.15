@@ -31,7 +31,7 @@ void SeqListCheckCapacity(SL* ps)
 	if (ps->size == ps->capacity)//À©ÈÝÒ»°ãÀ©Á½±¶
 	{
 		int newcapacity = ps->capacity == 0 ? 4 : ps->capacity * 2;
-		SLDataType* tmp = realloc(ps->a, sizeof(newcapacity) * newcapacity);
+		SLDataType* tmp = realloc(ps->a, sizeof(SLDataType) * newcapacity);
 		if (tmp == NULL)
 		{
 			printf("realloc fail\n");
